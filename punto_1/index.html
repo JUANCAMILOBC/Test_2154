@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no ,initial-scale=1.0,
+      maximum-scale=1.0, minimum-scale=1.0">
+    <title>News search engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,900" rel="stylesheet" >
+    <link rel="stylesheet" href="styles.css">
+    <script src="app_NEWS.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-wrapper light-blue darken-3">
+        <a href="#!" class="brand-logo center">News search engine</a>
+      </nav>
+
+      <div class="container white">
+        <div class="searcher">
+          <div clas="col s12 m8 offset-m2">
+            <from>
+              <h2 class="heading">Search news by category</h2>
+              <select 
+                class="browser-default" 
+                id="Category">
+
+                <option value="">- Select -</option>
+                <option value="general">General</option>
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+                
+
+              </select>
+
+              <div class="input-field col s12">
+                <input type="button" class="btn-block btn-large amber darken-2"
+                       value="Search" onclick="get_news()"/>
+              </div>
+            </from>
+          </div>
+        </div>
+        <div class="row" id="divlistnews">
+
+        </div>
+
+      </div>
+
+    </div>    
+  </body>
+</html>
