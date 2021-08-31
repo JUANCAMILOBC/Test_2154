@@ -1,3 +1,6 @@
+/*
+Ejecutar en localhost el HTML(limitaciones de la API free)
+*/
 const get_news=async()=>{
 	let categoria = document.querySelector("#Category").value;
 
